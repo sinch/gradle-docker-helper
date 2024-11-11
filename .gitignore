@@ -1,0 +1,47 @@
+### Gradle & build ###
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+build/
+!**/src/**/build/
+!gradle/**/build/
+!helm/**/build/
+.kotlin
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/**/out/
+!gradle/**/out/
+!helm/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### crash dumps ###
+.hprof
+
+### dotenv ###
+.env
+.envrc
+
+### misc ###
+.DS_Store
