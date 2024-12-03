@@ -10,14 +10,16 @@ open class DockerHelperPluginExtension {
     var taskGroup: String = "docker"
     var taskPrefix: String = "docker"
 
-    val registryAuthority: String? = null // if null, the other registry settings are ignored
-    val registryUsername: String? = null
-    val registryPassword: String? = null
+    var registryAuthority: String? = null // if null, the other registry settings are ignored
+    var registryUsername: String? = null
+    var registryPassword: String? = null
 
-    var imageName: String? = null 
-    var imagePath: String? = null 
+    var imageName: String? = null
+    var imagePath: String? = null
     var tag: String = "latest"
-    
+
+    var waitSeconds: Int = DEFAULT_WAIT_SECONDS // 60
+
     var envVars: Map<String, String> = mapOf()
 
     var portBindings: List<String> = listOf()
